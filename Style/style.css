@@ -2,20 +2,14 @@
    Nicolette Semmelmeyer Creative
    WDD 130 - styles.css
 ================================================== */
-
-/* Google Fonts
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-*/
-
-/* ---------- RESET ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* ---------- BODY ---------- */
+ 
 
 body {
     background-color: #FAEEE7;
@@ -24,7 +18,7 @@ body {
     line-height: 1.7;
 }
 
-/* ---------- HEADINGS ---------- */
+HEADINGS 
 
 h1,
 h2,
@@ -39,7 +33,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* ---------- LINKS ---------- */
+LINKS 
 
 a {
     text-decoration: none;
@@ -51,7 +45,7 @@ a:hover {
     color: #FFA3C6;
 }
 
-/* ---------- HEADER ---------- */
+
 
 header {
     background: white;
@@ -68,7 +62,7 @@ header {
     width: 180px;
 }
 
-/* ---------- NAVIGATION ---------- */
+NAVIGATION 
 
 nav ul {
     list-style: none;
@@ -108,30 +102,25 @@ nav a {
 
 /* ---------- BUTTONS ---------- */
 
+/* ---------- BUTTONS ---------- */
+
 button,
-.btn {
+.button {
     display: inline-block;
     background: #FFA3C6;
     color: #33272A;
-
     padding: 15px 35px;
-
     border: none;
     border-radius: 10px;
-
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
-
-    transition: .3s;
+    transition: 0.3s;
 }
 
 button:hover,
-.btn:hover {
-
+.button:hover {
     background: #C3F0CA;
-
     transform: translateY(-3px);
 }
 
@@ -164,12 +153,9 @@ section h2 {
 
 /* ---------- CARD GRID ---------- */
 
-.card-container {
-
+.cards {
     display: grid;
-
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 35px;
 }
 
@@ -193,7 +179,6 @@ section h2 {
 
 .card:hover,
 .lesson-card:hover {
-
     transform: translateY(-8px);
 }
 
@@ -265,7 +250,6 @@ section h2 {
 }
 
 .portfolio-grid img:hover {
-
     transform: scale(1.04);
 }
 
@@ -338,7 +322,6 @@ footer a {
 }
 
 footer a:hover {
-
     color: white;
 }
 
@@ -387,12 +370,9 @@ textarea {
 
 input:focus,
 textarea:focus {
-
     outline: none;
-
     border-color: #FFA3C6;
 }
-
 /* ---------- RESPONSIVE ---------- */
 
 @media screen and (max-width:900px){
@@ -456,3 +436,5 @@ button{
 }
 
 }
+</body>
+</html>
