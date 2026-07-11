@@ -229,56 +229,117 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* ---------- PORTFOLIO ---------- */
 
-.portfolio-grid {
 
-    display: grid;
 
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 
+
+
+
+/* ---------- PORTFOLIO - ALFREDO'S CHILDPAGE---------- */
+
+/* ---------- PORTFOLIO PAGE TITLE BOX ---------- */
+
+.page-title-box {
+    background: white;
+    border-radius: 15px;
+    padding: 40px 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.page-title-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page-title-box p {
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin-bottom: 0;
+}
+
+/* ---------- PORTFOLIO LAYOUT ---------- */
+
+.portfolio-layout {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+
+.main-content {
+    flex: 1.5;
+    background: white;
+    border-radius: 15px;
+    padding: 35px 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.main-content h3 {
+    font-size: 1.15rem;
+    color: #FFA3C6;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.main-content h3:first-of-type {
+    margin-top: 0;
+}
+
+.main-content p {
+    font-size: 0.98rem;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F0E0D6;
+}
+
+.portfolio-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 
-.portfolio-grid img {
+.portfolio-image {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    min-height: 180px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
 
+.portfolio-image.image-1 {
+    background-color: #C3F0CA;
+}
+
+.portfolio-image.image-2 {
+    background-color: #FFC6C7;
+}
+
+.portfolio-image img {
     width: 100%;
-
-    border-radius: 15px;
-
-    transition: .3s;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.portfolio-grid img:hover {
-    transform: scale(1.04);
+/* ---------- CLOSING SECTION ---------- */
+
+.closing {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    text-align: left;
 }
 
-/* ---------- ABOUT ---------- */
 
-.about {
 
-    display: flex;
 
-    gap: 40px;
 
-    align-items: center;
 
-    flex-wrap: wrap;
-}
 
-.about img {
-
-    flex: 1;
-
-    max-width: 450px;
-
-    border-radius: 15px;
-}
-
-.about-text {
-
-    flex: 1;
-}
 
 /* ---------- CTA ---------- */
 
@@ -403,36 +464,57 @@ nav ul{
 
 }
 
+
+
+
+
+
 @media screen and (max-width:600px){
 
 header{
-
     padding:20px;
 }
 
 main{
-
     padding:30px 20px;
 }
 
 .hero{
-
     padding:60px 20px;
 }
 
 .hero h1{
-
     font-size:2rem;
 }
 
 section h2{
-
     font-size:1.8rem;
 }
 
 button{
-
     width:100%;
+}
+
+.page-title-box {
+    padding: 25px 30px;
+}
+
+.page-title-box h1 {
+    font-size: 2rem;
+}
+
+.portfolio-layout {
+    flex-direction: column;
+}
+
+.main-content {
+    padding: 25px 30px;
+}
+
+.closing {
+    padding: 30px 20px;
+}
+
 }
 
 }
